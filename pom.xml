@@ -51,6 +51,12 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                   <!-- debug will ignore breakpoints if jvmArguments are set-->
+                    <!-- https://youtrack.jetbrains.com/issue/IDEA-376466/Maven-spring-bootrun-debug-doesnt-stop-at-breakpoints-if-jvmArguments-are-specified -->
+                    <!-- <jvmArguments>-Dspring.profiles.active=dev</jvmArguments>-->
+                    <mainClass>com.mytests.spring.springmavendebugforautotest.SpringMavenDebugForAutotestApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
