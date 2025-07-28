@@ -1,9 +1,9 @@
-## small project to test that spring debugger stops at breakpoints when running Naven Java application in the different ways
+## small project to test that spring debugger stops at breakpoints when running Maven Java application in the different ways
 
 #### Prerequisites:
 
-0. make sure that you have the Spring Debugger plugin installed in the idea
-1. clone project and import project to idea
+1. make sure that you have the Spring Debugger plugin installed in the idea
+2. clone project and import project to idea
 
 ##### Steps:
 1. put breakpoint to the `test1()` method in the `TestClientService` class
